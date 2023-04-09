@@ -1,7 +1,9 @@
 const Header = () => {
     return (
         <>
-            <h1>Memory Card Game</h1>
+            <header>
+                <h1>Memory Card Game</h1>
+            </header>
         </>
     );
 };
