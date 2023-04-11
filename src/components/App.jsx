@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Header from "./Header";
 import Gameboard from "./Gameboard";
 import cardList from "./utils/CardList";
