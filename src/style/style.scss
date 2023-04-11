@@ -17,6 +17,16 @@ header {
     background-color: #dfdbdb;
 }
 
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: beige;
+}
+
 main {
     display: grid;
     justify-content: center;

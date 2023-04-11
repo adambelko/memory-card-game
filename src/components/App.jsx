@@ -1,23 +1,40 @@
 import { useState, useEffect } from "react";
 import Header from "./Header";
 import Gameboard from "./Gameboard";
-import cardList from "./utils/cardList";
+import cardList from "./utils/CardList";
+import Scoreboard from "./Scoreboard";
 
 const App = () => {
-    const [cards, setCards] = useState(cardList);
-
     const shuffleCards = (arr) => {
-        arr.sort(() => Math.random() - 0.5);
+        return arr.sort(() => Math.random() - 0.5);
     };
 
-    useEffect(() => {
-        shuffleCards(cards);
-    });
+    const [cards, setCards] = useState(shuffleCards(cardList));
+    const [currScore, setCurrScore] = useState(0);
+    const [bestScore, setBestScore] = useState("");
+
+    const onClick = (id) => {
+        const selCard = cards.find((card) => card.id === id);
+
+        if (selCard.clicked === false) {
+            const updatedCards = cards.map((card) => {
+                return card.id === id ? { ...card, clicked: true } : card;
+            });
+
+            setCards(shuffleCards(updatedCards));
+            setCurrScore(currScore + 1);
+        } else {
+            if (currScore > bestScore) setBestScore(currScore);
+            setCurrScore(0);
+            setCards(shuffleCards(cardList));
+        }
+    };
 
     return (
         <>
             <Header />
-            <Gameboard cards={cards} />
+            <Scoreboard currScore={currScore} bestScore={bestScore} />
+            <Gameboard cards={cards} onClick={onClick} />
         </>
     );
 };

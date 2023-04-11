@@ -1,10 +1,10 @@
-const Card = ({ source, alt, name }) => {
+const Card = ({ source, alt, name, id, onClick }) => {
     return (
         <>
-            <div className="card-wrapper">
+            <button className="card-wrapper" onClick={() => onClick(id)}>
                 <img src={source} alt={alt} />
                 <div className="card-name">{name}</div>
-            </div>
+            </button>
         </>
     );
 };
