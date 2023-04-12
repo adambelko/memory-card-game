@@ -1,76 +1,88 @@
 import { v4 as uuidv4 } from "uuid";
+import bee from "/assets/bee.jpg";
+import austronaut from "/assets/astronaut.jpg";
+import chicken from "/assets/chicken.jpg";
+import cow from "/assets/cow.jpg";
+import crocodile from "/assets/crocodile.jpg";
+import rabbit from "/assets/rabbit.jpg";
+import dinosaur from "/assets/dinosaur.jpg";
+import doggy from "/assets/doggy.jpg";
+import cat from "/assets/cat.jpg";
+import koala from "/assets/koala.jpg";
+import slot from "/assets/slot.jpg";
+import penguin from "/assets/penguin.jpg";
 
 let cardList = [
     {
         id: uuidv4(),
         name: "Bee",
-        imgSrc: "/assets/bee.jpg",
+        imgSrc: bee,
         clicked: false,
     },
     {
         id: uuidv4(),
         name: "Astronaut",
-        imgSrc: "/assets/astronaut.jpg",
+        imgSrc: austronaut,
         clicked: false,
     },
     {
         id: uuidv4(),
         name: "Chicken",
-        imgSrc: "/assets/chicken.jpg",
+        imgSrc: chicken,
         clicked: false,
     },
     {
         id: uuidv4(),
         name: "Cow",
-        imgSrc: "/assets/cow.jpg",
+        imgSrc: cow,
         clicked: false,
     },
     {
         id: uuidv4(),
         name: "Crocodile",
-        imgSrc: "/assets/crocodile.jpg",
+        imgSrc: crocodile,
         clicked: false,
     },
     {
         id: uuidv4(),
         name: "Rabbit",
-        imgSrc: "/assets/rabbit.jpg",
+        imgSrc: rabbit,
         clicked: false,
     },
     {
         id: uuidv4(),
         name: "Dinosaur",
-        imgSrc: "/assets/dinosaur.jpg",
+        imgSrc: dinosaur,
         clicked: false,
     },
     {
         id: uuidv4(),
         name: "Doggy",
-        imgSrc: "/assets/doggy.jpg",
+        imgSrc: doggy,
         clicked: false,
     },
     {
         id: uuidv4(),
         name: "Cat",
-        imgSrc: "/assets/cat.jpg",
+        imgSrc: cat,
         clicked: false,
     },
     {
         id: uuidv4(),
         name: "Koala",
-        imgSrc: "/assets/koala.jpg",
+        imgSrc: koala,
         clicked: false,
     },
     {
         id: uuidv4(),
         name: "Slot",
-        imgSrc: "/assets/slot.jpg",
+        imgSrc: slot,
         clicked: false,
     },
     {
         id: uuidv4(),
         name: "Penguin",
-        imgSrc: "/assets/penguin.jpg",
+        imgSrc: penguin,
         clicked: false,
     },
 ];
